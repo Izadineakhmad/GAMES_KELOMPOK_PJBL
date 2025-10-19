@@ -1,5 +1,5 @@
 import pesonaLogo from "@/assets/icon/pesona.webp";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { ChevronRightIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 interface sidebarProps {
