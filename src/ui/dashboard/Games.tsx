@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { organic, anorganic, b3, park } from "@/assets";
 
@@ -23,7 +23,6 @@ export default function TrashGameWithPhysics() {
   const trashKey = useRef<number>(0);
   const binRef = useRef<(HTMLDivElement | null)[]>([]);
   const trashRef = useRef<(HTMLDivElement | null)[]>([]);
-  let trashRem = [...trashTypes]
 
   // generate 3 sampah acak
   const generateTrashes = () => {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import heroVideos from '@/assets/icon/Vid 20240208 181109(4).mp4'
 import { pesonaLogo } from '@/assets';
 import GradientButton from '../shared/GradientButton';

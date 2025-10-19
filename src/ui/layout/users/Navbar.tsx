@@ -1,5 +1,5 @@
-import React, { use, useEffect, useRef, useState } from "react";
-import { pesonaLogo, pesonaLogoHitam } from "@/assets";
+import { useEffect, useRef, useState } from "react";
+import { pesonaLogo } from "@/assets";
 
 function Navbar ({onToggle}: {onToggle : () => void}) {
 

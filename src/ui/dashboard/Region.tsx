@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
@@ -61,7 +61,7 @@ function Region() {
           pagination={{
             el: ".custom-pagination",
             clickable: true,
-            renderBullet: (index, className) => {
+            renderBullet: (_, className) => {
               return `<button class="${className} size-4 rounded-full flex justify-center items-center border border-[#8B5E3C] cursor-pointer overflow-hidden"></button>`;
             },
           }}

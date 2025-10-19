@@ -1,6 +1,6 @@
 import Navbar from '@/ui/layout/users/Navbar'
 import Sidebar from '@/ui/layout/users/Sidebar'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Footer from './Footer'
 
 function LayoutUser ({children}: {children: React.ReactNode}) {

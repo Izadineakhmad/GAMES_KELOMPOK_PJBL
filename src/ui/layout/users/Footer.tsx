@@ -1,6 +1,4 @@
-import React from 'react'
 import { pesonaLogo } from '@/assets'
-import { Link } from 'react-router'
 
 function Footer() {
     const socialMedia = ['Facebook', 'Instagram', 'TikTok', 'LinkedIn']

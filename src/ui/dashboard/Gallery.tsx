@@ -1,6 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
 import Gambar from '@/assets/gallery/Pemandangan .jpg';
-import GradientButton from '../shared/GradientButton';
 import { useIntersection } from '@/hooks/useIntersection';
 
 
