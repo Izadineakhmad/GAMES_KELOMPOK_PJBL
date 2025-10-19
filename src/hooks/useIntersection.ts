@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export function useIntersection({treshold} : {treshold : number}) {
   const intersectingRef = useRef<HTMLDivElement>(null)
