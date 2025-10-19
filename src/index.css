@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-playfair: "Playfair Display", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --spacing-sd: 80rem;
+  --breakpoint-sd: 80rem;
+  --color-primary: #2E5E4E;
+  --color-secondary: #8B5E3C;
+  --color-accent: #B87333;
+  --color-light-sand: #F9F5F0;
+  --color-content: #1C1C1C;
+}
+
+@custom-variant hover-focus (&:hover, &:focus);
+
+@theme {
+  --animate-muncul: muncul 1.5s ease-in-out both ;
+  
+  @keyframes muncul {
+    0% { 
+      opacity: 0%;
+    }
+    50% { 
+      opacity: 100%;
+      transform: translateX(20px)
+    }
+    100% { 
+      opacity: 0%;
+    }
+    
+  }
+  
+  --animate-shake: shake 1.5s ease-in both infinite;
+
+  @keyframes shake {
+    25% { 
+      transform: translateY(-20px)
+    }
+    35% { 
+      transform: rotate(25deg)
+    }
+    45% { 
+      transform: rotate(-25deg)
+    }
+    55% { 
+      transform: rotate(25deg)
+    }
+    65% { 
+      transform: rotate(-25deg)
+    }
+    100% { 
+      transform: translateY(0px)
+      }
+  }
+}
+
+
+body {
+  @apply font-roboto;
+}
+
+
+.swiper-pagination-bullet-active {
+  @apply bg-[#2E5E4E] text-white 
+}
+
