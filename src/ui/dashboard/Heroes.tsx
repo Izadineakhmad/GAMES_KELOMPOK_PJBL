@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import heroVideos from '@/assets/icon/Vid 20240208 181109(4).mp4'
 import { pesonaLogo } from '@/assets';
-import GradientButton from '../shared/GradientButton';
 
 function Heroes() {
   
@@ -46,7 +45,6 @@ function Heroes() {
         <div
           className={`absolute left-1/2 bottom-60 -translate-x-1/2 transition-opacity duration-1000 ${loaded ? 'opacity-100' : 'opacity-0'}`}
         >
-          <GradientButton/>
         </div>
       </div>
     </section>
